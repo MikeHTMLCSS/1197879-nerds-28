@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="utf-8">
@@ -7,7 +7,7 @@
 </head>
 <body>
   <header>
-    <img src="img/nerds.png" width="160" height="65" alt="логотип" class="logo">
+    <a href="index.html"><img src="img/nerds.png" width="160" height="65" alt="логотип" class="logo"></a>
     <nav>
       <a href="">СТУДИЯ</a>
       <a href="">КЛИЕНТЫ</a>
@@ -21,18 +21,65 @@
     <h1 class="title">Магазин готовых шаблонов</h1>
     <section class="shop">
       <aside class="customization">
-        <!--Формы настроек поиска шаблонов-->
+        <form>
+          <!--<label for="cost">Стоимость:</label>
+          <div>
+            <input type="range" class="range2" style="position: absolute; left: 0;">
+            <input id="cost" type="range" class="range1">
+          </div>
+          <div>
+            <p>От</p>
+            <p>0</p>
+            <p>До</p>
+            <p>15000</p>
+          </div>-->
+          <p>Сетка:</p>
+          <label>
+            <input type="radio" name="grid">
+            Адаптивная<br>
+          </label>
+          <label>
+            <input type="radio" name="grid">
+            Фиксированная<br>
+          </label>
+          <label>
+            <input type="radio" name="grid">
+            Резиновая
+          </label>
+          <p>Особенности:</p>
+          <label>
+            <input type="checkbox" name="grid">
+            Слайдер<br>
+          </label>
+          <label>
+            <input type="checkbox" name="grid">
+            Блок преимуществ<br>
+          </label>
+          <label>
+            <input type="checkbox" name="grid">
+            Новости<br>
+          </label>
+          <label>
+            <input type="checkbox" name="grid">
+            Галерея<br>
+          </label>
+          <label>
+            <input type="checkbox" name="grid">
+            Корзина<br>
+          </label>
+          <input type="submit" value="Показать">
+        </form>
       </aside>
       <div>
         <div class="templates">
           <p class="tag">СОРТИРОВАТЬ</p>
           <ul class="sortul">
-            <li class="sortli">ПО ЦЕНЕ</li>
-            <li class="sortli">ПО ТИПУ</li>
-            <li class="sortli">ПО НАЗВАНИЮ</li>
+            <li class="sortli"><button>ПО ЦЕНЕ</button></li>
+            <li class="sortli"><button>ПО ТИПУ</button></li>
+            <li class="sortli"><button>ПО НАЗВАНИЮ</button></li>
           </ul>
-          <svg><!--треугольничек--></svg>
-          <svg><!--треугольничек--></svg>
+          <button><svg><!--треугольничек--></svg></button>
+          <button><svg><!--треугольничек--></svg></button>
         </div>
         <ul class="templates">
           <li>
@@ -73,13 +120,24 @@
           </li>
         </ul>
         <div>
-          <!--Кнопки навигации-->
+          <ul>
+            <li>
+              <button>1</button>
+            </li>
+            <li>
+              <button>2</button>
+            </li>
+            <li>
+              <button>3</button>
+            </li>
+          </ul>
+          <button>Следующая</button>
         </div>
       </div>
     </section>
   </main>
   <footer>
-    <img src="img/map.png" width="1440" height="416" alt="карта">
+    <div class="map"><button>Напишите нам</button></div>
     <ul class="network">
       <li>
         <a href=""><img src="img/vk.jpg" width="81" height="81" alt="вконтакте"></a>
@@ -96,5 +154,23 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
+  <div class="popup">
+    <p>Напишите нам</p>
+    <form>
+      <div class="user-data">
+        <div>
+          <label for="name">Ваше имя:<br></label>
+          <input type="text" id="name" value="Имя Фамилия">
+        </div>
+        <div>
+          <label for="mail">Ваш e-mail:<br></label>
+          <input type="email" id="mail" value="email@exampe.com">
+        </div>
+      </div>
+      <label for="text">Текст письма:<br></label>
+      <textarea id="text" rows="5">В свободной форме</textarea><br>
+      <input type="submit" value="Отправить">
+    </form>
+  </div>
 </body>
 </html>
