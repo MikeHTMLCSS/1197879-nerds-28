@@ -7,6 +7,10 @@
   --background-2: #eeeeee;
   --icon: #e1e1e1;
 }
+body {
+  margin: auto;
+  width: 1440px;
+}
 .button-1 {
   background-color: var(--button-1);
 }
@@ -51,6 +55,10 @@
 .customization {
   margin-right: 140px;
 }
+.fb {
+  margin-top: 30px;
+  margin-left: 35px;
+}
 .footer {
   display: flex;
   height: 217px;
@@ -88,6 +96,10 @@ h1 {
 .images li:nth-of-type(2n) {
   margin-left: 41px;
 }
+.in {
+  margin-top: 30px;
+  margin-left: 30px;
+}
 input[type="submit"] {
   width: 260px;
   height: 50px;
@@ -112,7 +124,7 @@ main section:not(:nth-child(1)) {
   padding-right: 140px;
 }
 .map {
-  background-image: url(img/map.png);
+  background-image: url(../img/map.png);
   background-color: var(--background-2);
   width: 1440px;
   height: 416px;
@@ -154,18 +166,6 @@ nav {
   height: 81px;
   background-color: var(--icon);
   border-radius: 50%;
-}
-.vk {
-  margin-top: 33px;
-  margin-left: 27px;
-}
-.fb {
-  margin-top: 30px;
-  margin-left: 35px;
-}
-.in {
-  margin-top: 30px;
-  margin-left: 30px;
 }
 .next {
   width: 260px;
@@ -283,4 +283,8 @@ nav {
 .visually-hidden {
   position: absolute;
   font-size: 0;
+}
+.vk {
+  margin-top: 33px;
+  margin-left: 27px;
 }
