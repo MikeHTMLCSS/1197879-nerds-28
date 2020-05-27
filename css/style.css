@@ -32,6 +32,27 @@
   --disabled: #bfc1c3;
   --template-H-hover: #4d4d4d;
 }
+.about-us {
+  display: flex;
+}
+.about-us div:first-child {
+  margin-right: 149px;
+}
+.about-us img {
+  margin-top: 39px;
+  margin-bottom: 37px;
+}
+.advantages-list {
+  font-family: Roboto;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.advantages-ul {
+  display: flex;
+}
+.advantages-ul li {
+  margin-right: 21px;
+}
 body {
   margin: 0 auto;
   width: 1440px;
@@ -109,6 +130,18 @@ body {
 }
 .customization {
   margin-right: 140px;
+}
+.design-studio {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+.digit {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 45px;
+  margin-bottom: 11px;
 }
 .direction:nth-of-type(1) {
   margin-right: 18px;
@@ -189,6 +222,9 @@ li:hover .template-H {
   font-weight: bold;
   font-size: 18px;
   margin-top: 55px;
+}
+.list:nth-child(1), .list:nth-child(2) {
+  margin-bottom: 23px;
 }
 .logo {
   margin-right: 202px;
@@ -307,6 +343,21 @@ nav {
   height: 50px;
   margin-right: 11px;
 }
+.partners {
+  border-top: 2px solid var(--background-2);
+  border-bottom: 2px solid var(--background-2);
+  height: 180px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 80px;
+  margin-top: 70px;
+}
+.partners :nth-child(2n) {
+  width: 2px;
+  height: 52px;
+  background-color: var(--background-2);
+}
 .popup {
   display: none;
 }
@@ -370,6 +421,12 @@ nav {
 .sortul button:active {
   color: var(--sort-active);
 }
+span {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 26px;
+  vertical-align: top;
+}
 .tag {
   text-transform: uppercase;
   margin-right: 257px;
@@ -414,4 +471,8 @@ nav {
 .vk {
   margin-top: 33px;
   margin-left: 27px;
+}
+.work {
+  margin-bottom: 23px;
+  margin-top: 40px;
 }
