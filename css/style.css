@@ -1,25 +1,71 @@
 :root {
   --light: #ffffff;
   --ordinary-button: #fb565a;
+  --ordinary-button-hover: #e74246;
+  --ordinary-button-active: #d7373b;
   --button-1: #fb565a;
   --button-2: #00ca74;
   --button-3: #efc849;
   --background-2: #eeeeee;
   --icon: #e1e1e1;
   --contact: #666666;
+  --logo-press: #a6a6a6;
+  --text-active: #aaaaaa;
+  --button-text-active: #e37376;
+  --button-1-hover: #e74246;
+  --button-1-active: #d7373b;
+  --button-1-text: #e37376;
+  --button-2-hover: #00bc6c;
+  --button-2-active: #00aa62;
+  --button-2-text: #4cc391;
+  --button-3-hover: #eab534;
+  --button-3-active: #e5a722;
+  --button-3-text: #edc164;
+  --icon-hover: #e74246;
+  --icon-active: #d7373b;
+  --catalog-button-hover: #dfdfdf;
+  --catalog-button-active: #d5d5d5;
+  --catalog-button-text: #959595;
+  --sort: #b3b3b3;
+  --sort-hover: #666666;
+  --sort-active: #000000;
+  --disabled: #bfc1c3;
+  --template-H-hover: #4d4d4d;
 }
 body {
-  margin: auto;
+  margin: 0 auto;
   width: 1440px;
+  color: var(--dark);
 }
 .button-1 {
   background-color: var(--button-1);
 }
+.button-1:hover {
+  background-color: var(--button-1-hover);
+}
+.button-1:active {
+  background-color: var(--button-1-active);
+  color: var(--button-1-text);
+}
 .button-2 {
   background-color: var(--button-2);
 }
+.button-2:hover {
+  background-color: var(--button-2-hover);
+}
+.button-2:active {
+  background-color: var(--button-2-active);
+  color: var(--button-2-text);
+}
 .button-3 {
   background-color: var(--button-3);
+}
+.button-3:hover {
+  background-color: var(--button-3-hover);
+}
+.button-3:active {
+  background-color: var(--button-3-active);
+  color: var(--button-3-text);
 }
 .cart {
   margin-left: 245px;
@@ -64,6 +110,12 @@ body {
 .customization {
   margin-right: 140px;
 }
+.direction:nth-of-type(1) {
+  margin-right: 18px;
+}
+:disabled + label {
+  color: var(--disabled);
+}
 .fb {
   margin-top: 30px;
   margin-left: 35px;
@@ -102,6 +154,9 @@ h1 {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+li:hover .template-H {
+  background-color: var(--template-H-hover);
+}
 .images li:nth-of-type(2n) {
   margin-left: 41px;
 }
@@ -109,7 +164,7 @@ h1 {
   margin-top: 30px;
   margin-left: 30px;
 }
-input[type="submit"] {
+[type="submit"] {
   width: 260px;
   height: 50px;
   font-family: Roboto;
@@ -117,6 +172,17 @@ input[type="submit"] {
   font-size: 16px;
   text-transform: uppercase;
   margin-top: 48px;
+}
+[type="submit"], .page button {
+  border-radius: 3px;
+  border: none;
+}
+[type="submit"]:hover, .page button:hover {
+  background-color: var(--catalog-button-hover);
+}
+[type="submit"]:active, .page button:active {
+  background-color: var(--catalog-button-active);
+  color: var(--catalog-button-text);
 }
 .label {
   font-family: Roboto;
@@ -167,6 +233,14 @@ main section:not(:nth-child(1)) {
   padding-top: 17px;
   padding-bottom: 15px;
   margin-top: 38px;
+  text-transform: uppercase;
+}
+.more-read:hover {
+  background-color: var(--ordinary-button-hover);
+}
+.more-read:active {
+  background-color: var(--ordinary-button-active);
+  color: var(--button-text-active);
 }
 name {
   font-family: Roboto;
@@ -185,6 +259,12 @@ nav {
   text-transform: uppercase;
   margin-top: 75px;
 }
+.nav:hover {
+  color: var(--ordinary-button);
+}
+.nav:active {
+  color: var(--text-active);
+}
 .network {
   display: flex;
   justify-content: space-around;
@@ -198,6 +278,12 @@ nav {
   height: 81px;
   background-color: var(--icon);
   border-radius: 50%;
+}
+.network div:hover {
+  background-color: var(--icon-hover);
+}
+.network div:active {
+  background-color: var(--icon-active);
 }
 .next {
   width: 260px;
@@ -273,11 +359,20 @@ nav {
 .sortul button {
   text-transform: uppercase;
   margin-top: 40px;
-  margin-right: 25px;
+  margin-right: 19px;
+  border: none;
+  background-color: transparent;
+  color: var(--sort);
+}
+.sortul button:hover {
+  color: var(--sort-hover);
+}
+.sortul button:active {
+  color: var(--sort-active);
 }
 .tag {
   text-transform: uppercase;
-  margin-right: 267px;
+  margin-right: 257px;
   font-family: Roboto;
   font-weight: bold;
   font-size: 18px;
