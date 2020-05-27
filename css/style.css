@@ -149,9 +149,16 @@ body {
 :disabled + label {
   color: var(--disabled);
 }
-.fb {
-  margin-top: 30px;
-  margin-left: 35px;
+.fb{
+  width: 12px;
+  height: 22px;
+  background-image: url(../img/fb.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.fb:active {
+  background-image: url(../img/fb-active.svg);
 }
 .footer {
   display: flex;
@@ -194,8 +201,15 @@ li:hover .template-H {
   margin-left: 41px;
 }
 .in {
-  margin-top: 30px;
-  margin-left: 30px;
+  width: 21px;
+  height: 21px;
+  background-image: url(../img/in.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.in:active {
+  background-image: url(../img/in-active.svg);
 }
 [type="submit"] {
   width: 260px;
@@ -519,8 +533,15 @@ span {
   font-size: 0;
 }
 .vk {
-  margin-top: 33px;
-  margin-left: 27px;
+  width: 26px;
+  height: 15px;
+  background-image: url(../img/vk.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.vk:active {
+  background-image: url(../img/vk-active.svg);
 }
 .work {
   margin-bottom: 23px;
