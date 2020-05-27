@@ -229,6 +229,12 @@ li:hover .template-H {
 .logo {
   margin-right: 202px;
   margin-top: 49px;
+  width: 160px;
+  height: 66px;
+  background-image: url(../img/nerds.png);
+}
+.logo:active {
+  background-image: url(../img/nerds-active.png);
 }
 main section:not(:nth-child(1)) {
   padding-left: 140px;
@@ -357,6 +363,50 @@ nav {
   width: 2px;
   height: 52px;
   background-color: var(--background-2);
+}
+.partner1 {
+  width: 199px;
+  height: 68px;
+  background-image: url(../img/partner-1.png);
+}
+.partner1:hover {
+  background-image: url(../img/partner-1-hover.png);
+}
+.partner1:active{
+  background-image: url(../img/partner-1-active.png);
+}
+.partner2 {
+  width: 209px;
+  height: 90px;
+  background-image: url(../img/partner-2.png);
+}
+.partner2:hover {
+  background-image: url(../img/partner-2-hover.png);
+}
+.partner2:active{
+  background-image: url(../img/partner-2-active.png);
+}
+.partner3 {
+  width: 185px;
+  height: 52px;
+  background-image: url(../img/partner-3.png);
+}
+.partner3:hover {
+  background-image: url(../img/partner-3-hover.png);
+}
+.partner3:active{
+  background-image: url(../img/partner-3-active.png);
+}
+.partner4 {
+  width: 173px;
+  height: 84px;
+  background-image: url(../img/partner-4.png);
+}
+.partner4:hover {
+  background-image: url(../img/partner-4-hover.png);
+}
+.partner4:active{
+  background-image: url(../img/partner-4-active.png);
 }
 .popup {
   display: none;
