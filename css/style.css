@@ -35,15 +35,18 @@
 .about-us {
   display: flex;
 }
-.about-us div:first-child {
-  margin-right: 149px;
-}
 .about-us img {
   margin-top: 39px;
   margin-bottom: 37px;
 }
+.about-us .list {
+  display: flex;
+  height: 20px;
+  justify-content: left;
+  align-items: center;
+}
 .advantages-list {
-  font-family: Roboto;
+  font-family: Roboto, Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -56,7 +59,6 @@
 body {
   margin: 0 auto;
   width: 1440px;
-  color: var(--dark);
 }
 .button-1 {
   background-color: var(--button-1);
@@ -99,7 +101,7 @@ body {
   padding-left: 140px;
 }
 .contact {
-  font-family: Roboto;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: var(--contact);
@@ -110,7 +112,7 @@ body {
   display: flex;
   text-transform: uppercase;
   align-items: center;
-  font-family: Roboto;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
 }
 .cost1 {
@@ -131,20 +133,40 @@ body {
 .customization {
   margin-right: 140px;
 }
+.data {
+  margin-right: 149px;
+}
 .design-studio {
-  font-family: Roboto;
+  font-family: Roboto, Arial, sans-serif;
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
 }
 .digit {
-  font-family: Roboto;
+  font-family: Roboto, Arial, sans-serif;
   font-weight: bold;
   font-size: 45px;
   margin-bottom: 11px;
 }
+.direction {
+  width: 11px;
+  height: 10px;
+  border: none;
+  background: none;
+  margin-top: 0;
+}
+.direction .down {
+  background-image: url(../img/arrow-1-active.svg);
+  width: 11px;
+  height: 10px;
+}
 .direction:nth-of-type(1) {
   margin-right: 18px;
+}
+.direction .up {
+  background-image: url(../img/arrow-2.svg);
+  width: 11px;
+  height: 10px;
 }
 :disabled + label {
   color: var(--disabled);
@@ -165,7 +187,7 @@ body {
   height: 217px;
 }
 .friend {
-  font-family: Roboto;
+  font-family: Roboto, Arial, sans-serif;
   font-weight: bold;
   font-size: 36px;
   margin-top: 65px;
@@ -183,12 +205,17 @@ h1 {
   display: block;
   background-color: var(--background-2);
   height: 163px;
-  font-family: Roboto;
+  font-family: Roboto, Arial, sans-serif;
   font-weight: 500;
   font-size: 55px;
   text-align: center;
   vertical-align: middle;
   padding-top: 72px;
+}
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .images img {
   border-bottom-left-radius: 5px;
@@ -211,31 +238,26 @@ li:hover .template-H {
 .in:active {
   background-image: url(../img/in-active.svg);
 }
-[type="submit"] {
-  width: 260px;
-  height: 50px;
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 16px;
-  text-transform: uppercase;
-  margin-top: 48px;
-}
-[type="submit"], .page button {
-  border-radius: 3px;
-  border: none;
-}
-[type="submit"]:hover, .page button:hover {
-  background-color: var(--catalog-button-hover);
-}
-[type="submit"]:active, .page button:active {
-  background-color: var(--catalog-button-active);
-  color: var(--catalog-button-text);
-}
 .label {
-  font-family: Roboto;
+  font-family: Roboto, Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
+  margin-top: 43px;
+  margin-bottom: 14px;
+}
+.label:first-child {
+  margin-bottom: 48px;
   margin-top: 55px;
+}
+.list div {
+  width: 25px;
+  height: 2px;
+  background-color: var(--ordinary-button);
+  margin-right: 7px;
+}
+.list p {
+  margin: 0;
+  font-family: Roboto, Arial, sans-serif;
 }
 .list:nth-child(1), .list:nth-child(2) {
   margin-bottom: 23px;
@@ -283,7 +305,7 @@ main section:not(:nth-child(1)) {
   background-color: var(--ordinary-button);
   display: block;
   border-radius: 3px;
-  font-family: Roboto;
+  font-family: Roboto, Arial, sans-serif;
   color: var(--light);
   text-align: center;
   padding-top: 17px;
@@ -299,7 +321,7 @@ main section:not(:nth-child(1)) {
   color: var(--button-text-active);
 }
 name {
-  font-family: Roboto;
+  font-family: Roboto, Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
 }
@@ -309,7 +331,7 @@ nav {
   width: 438px;
 }
 .nav {
-  font-family: Roboto;
+  font-family: Roboto, Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
@@ -441,7 +463,7 @@ nav {
   width: 160px;
   display: block;
   border-radius: 3px;
-  font-family: Roboto;
+  font-family: Roboto, Arial, sans-serif;
   font-weight: 500;
   color: var(--light);
   text-align: center;
@@ -452,7 +474,7 @@ nav {
   margin-bottom: 80px;
 }
 .services h3 {
-  font-family: Roboto;
+  font-family: Roboto, Arial, sans-serif;
   font-weight: bold;
   font-size: 24px;
   text-transform: uppercase;
@@ -473,7 +495,6 @@ nav {
 }
 .sortul button {
   text-transform: uppercase;
-  margin-top: 40px;
   margin-right: 19px;
   border: none;
   background-color: transparent;
@@ -486,18 +507,17 @@ nav {
   color: var(--sort-active);
 }
 span {
-  font-family: Roboto;
+  font-family: Roboto, Arial, sans-serif;
   font-weight: bold;
   font-size: 26px;
   vertical-align: top;
 }
 .tag {
   text-transform: uppercase;
-  margin-right: 257px;
-  font-family: Roboto;
+  margin-right: 251px;
+  font-family: Roboto, Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
-  margin-top: 55px;
 }
 .template-H {
   height: 40px;
@@ -509,24 +529,41 @@ span {
 .templates {
   display: flex;
   flex-wrap: wrap;
-}
-.templates .direction {
-  width: 11px;
-  height: 10px;
-  margin-top: 64px;
+  margin-top: 55px;
+  align-items: center;
 }
 .text, label {
-  font-family: Roboto;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
 .title {
-  font-family: Roboto;
+  font-family: Roboto, Arial, sans-serif;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   margin-top: 78px;
   margin-bottom: 25px;
+}
+[type="submit"] {
+  width: 260px;
+  height: 50px;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 48px;
+}
+[type="submit"], .page button {
+  border-radius: 3px;
+  border: none;
+}
+[type="submit"]:hover, .page button:hover {
+  background-color: var(--catalog-button-hover);
+}
+[type="submit"]:active, .page button:active {
+  background-color: var(--catalog-button-active);
+  color: var(--catalog-button-text);
 }
 .visually-hidden {
   position: absolute;
