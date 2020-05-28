@@ -102,11 +102,9 @@ body {
 }
 .contact {
   font-family: Roboto, Arial, sans-serif;
-  font-size: 16px;
   line-height: 18px;
   color: var(--contact);
   margin-top: 23px;
-  margin-bottom: 37px;
 }
 .costs {
   display: flex;
@@ -320,7 +318,7 @@ main section:not(:nth-child(1)) {
   background-color: var(--ordinary-button-active);
   color: var(--button-text-active);
 }
-name {
+.name {
   font-family: Roboto, Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -518,6 +516,12 @@ span {
   font-family: Roboto, Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
+}
+.tel {
+  font-family: Roboto, Arial, sans-serif;
+  color: var(--contact);
+  margin-top: 23px;
+  margin-bottom: 37px;
 }
 .template-H {
   height: 40px;
