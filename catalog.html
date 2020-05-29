@@ -8,27 +8,31 @@
 </head>
 <body>
   <header>
-    <a href="index.html">
-      <div class="logo"></div>
-    </a>
-    <nav>
-      <a href="" class="nav">
-        Студия
+    <div class="position">
+      <a href="">
+        <div class="logo"></div>
       </a>
-      <a href="" class="nav">
-        Клиенты
-      </a>
-      <a href="catalog.html" class="nav opened">
-        Магазин
-      </a>
-      <a href="" class="nav">
-        Контакты
-      </a>
-    </nav>
-    <img src="img/cart.svg" width="15" height="15" alt="" class="cart">
-    <a href="" class="nav">
-      Корзина
-    </a>
+      <nav>
+        <a href="" class="nav">
+          Студия
+        </a>
+        <a href="" class="nav">
+          Клиенты
+        </a>
+        <a href="catalog.html" class="nav opened">
+          Магазин
+        </a>
+        <a href="" class="nav">
+          Контакты
+        </a>
+      </nav>
+      <div>
+        <img src="img/cart.svg" width="15" height="15" alt="" class="cart">
+        <a href="" class="nav">
+          Корзина
+        </a>
+      </div>
+    </div>
   </header>
   <main>
     <h1>Магазин готовых шаблонов</h1>
@@ -198,49 +202,54 @@
         <p class="tel">
           тел. +7 (812) 275-75-75
         </p>
-        <button>
+        <button class="switch-on">
           Напишите нам
         </button>
       </div>
     </div>
     <div class="footer">
-      <ul class="network">
-        <li>
-          <a href="">
-            <div>
-              <div class="vk"></div>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div>
-              <div class="fb"></div>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div>
-              <div class="in"></div>
-            </div>
-          </a>
-        </li>
-      </ul>
-      <div>
-        <p class="friend">
-          Давайте дружить, это выгодно!
-        </p>
-        <p class="text">
-          Скидка 10% для друзей из социальных сетей.
-        </p>
+      <div class="position">
+        <ul class="network">
+          <li>
+            <a href="">
+              <div>
+                <div class="vk"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div>
+                <div class="fb"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div>
+                <div class="in"></div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div>
+          <p class="friend">
+            Давайте дружить, это выгодно!
+          </p>
+          <p class="text">
+            Скидка 10% для друзей из социальных сетей.
+          </p>
+        </div>
       </div>
     </div>
   </footer>
   <div class="popup">
-    <p class="text">
-      Напишите нам
-    </p>
+    <div class="popup-head">
+      <p class="write">
+        Напишите нам
+      </p>
+      <div class="switch-off"></div>
+    </div>
     <form>
       <div class="user-data">
         <div>
@@ -259,11 +268,10 @@
       <label for="text">
         Текст письма:<br>
       </label>
-      <textarea id="text" rows="5">
-        В свободной форме
-      </textarea><br>
-      <input type="submit" value="Отправить">
+      <textarea id="text" rows="5">В свободной форме</textarea><br>
+      <input type="submit" value="Отправить" class="send">
     </form>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

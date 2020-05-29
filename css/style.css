@@ -31,9 +31,12 @@
   --sort-active: #000000;
   --disabled: #bfc1c3;
   --template-H-hover: #4d4d4d;
+  --dark: #000000;
 }
 .about-us {
   display: flex;
+  align-items: center;
+  padding-bottom: 73px;
 }
 .about-us img {
   margin-top: 39px;
@@ -55,10 +58,6 @@
 }
 .advantages-ul li {
   margin-right: 21px;
-}
-body {
-  margin: 0 auto;
-  width: 1440px;
 }
 .button-1 {
   background-color: var(--button-1);
@@ -91,14 +90,11 @@ body {
   color: var(--button-3-text);
 }
 .cart {
-  margin-left: 245px;
   margin-right: 25px;
   margin-top: 77px;
 }
 .characteristic {
-  display: flex;
   background-color: var(--background-2);
-  padding-left: 140px;
 }
 .contact {
   font-family: Roboto, Arial, sans-serif;
@@ -130,9 +126,6 @@ body {
 }
 .customization {
   margin-right: 140px;
-}
-.data {
-  margin-right: 149px;
 }
 .design-studio {
   font-family: Roboto, Arial, sans-serif;
@@ -182,22 +175,20 @@ body {
 }
 .footer {
   display: flex;
-  height: 217px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 68px;
+  padding-bottom: 68px;
 }
 .friend {
   font-family: Roboto, Arial, sans-serif;
   font-weight: bold;
   font-size: 36px;
-  margin-top: 65px;
   margin-bottom: 0;
+  margin-top: 0;
 }
 header {
-  display: flex;
-  justify-content: left;
-  align-items: flex-start;
-  height: 114px;
   background-color: var(--background-2);
-  padding-left: 140px;
 }
 h1 {
   display: block;
@@ -261,7 +252,6 @@ li:hover .template-H {
   margin-bottom: 23px;
 }
 .logo {
-  margin-right: 202px;
   margin-top: 49px;
   width: 160px;
   height: 66px;
@@ -270,10 +260,6 @@ li:hover .template-H {
 .logo:active {
   background-image: url(../img/nerds-active.png);
 }
-main section:not(:nth-child(1)) {
-  padding-left: 140px;
-  padding-right: 140px;
-}
 .map {
   background-image: url(../img/map.png);
   background-color: var(--background-2);
@@ -281,6 +267,7 @@ main section:not(:nth-child(1)) {
   height: 362px;
   padding-top: 54px;
   padding-left: 140px;
+  margin: 0 auto;
 }
 .map button {
   width: 219px;
@@ -325,8 +312,9 @@ main section:not(:nth-child(1)) {
 }
 nav {
   display: flex;
-  justify-content: space-around;
-  width: 438px;
+}
+nav a:not(:last-child) {
+  margin-right: 45px;
 }
 .nav {
   font-family: Roboto, Arial, sans-serif;
@@ -345,9 +333,6 @@ nav {
   display: flex;
   justify-content: space-around;
   width: 261px;
-  margin-top: 68px;
-  margin-left: 140px;
-  margin-right: 139px;
 }
 .network div {
   width: 81px;
@@ -390,8 +375,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 80px;
-  margin-top: 70px;
+  width: 1158px;
 }
 .partners :nth-child(2n) {
   width: 2px;
@@ -448,14 +432,33 @@ nav {
 .popup-show {
   display: block;
   position: fixed;
-  left: 240px;
-  bottom: 200px;
+  left: 290px;
+  bottom: 100px;
+  background-color: var(--light);
+  padding: 80px;
+  padding-top: 25px;
+  box-shadow: 0px 10px 18px 0px var(--dark);
+}
+.popup-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.position {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 1158px;
 }
 .services {
   display: flex;
-  justify-content: left;
-  margin-top: 80px;
+  justify-content: space-between;
   border-bottom: 2px solid var(--background-2);
+  margin: 0;
+  padding-top: 80px;
+  width: 1158px;
+  padding-right: 58px;
 }
 .services a {
   width: 160px;
@@ -479,8 +482,8 @@ nav {
   margin-top: 25px;
   margin-bottom: 16px;
 }
-.services li:nth-child(1), .services li:nth-child(2) {
-  margin-right: 100px;
+.services-list {
+
 }
 .shop {
   display: flex;
@@ -536,6 +539,12 @@ span {
   margin-top: 55px;
   align-items: center;
 }
+textarea {
+  width: 760px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding: 20px;
+}
 .text, label {
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
@@ -549,6 +558,13 @@ span {
   margin-top: 78px;
   margin-bottom: 25px;
 }
+[type="email"] {
+  height: 50px;
+  width: 330px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 5px;
+}
 [type="submit"] {
   width: 260px;
   height: 50px;
@@ -557,6 +573,17 @@ span {
   font-size: 16px;
   text-transform: uppercase;
   margin-top: 48px;
+}
+[type="submit"].send {
+  color: var(--light);
+  background-color: var(--ordinary-button);
+}
+[type="submit"].send:hover {
+  background-color: var(--ordinary-button-hover);
+}
+[type="submit"].send:active {
+  background-color: var(--ordinary-button-active);
+  color: var(--button-text-active);
 }
 [type="submit"], .page button {
   border-radius: 3px;
@@ -568,6 +595,18 @@ span {
 [type="submit"]:active, .page button:active {
   background-color: var(--catalog-button-active);
   color: var(--catalog-button-text);
+}
+[type="text"] {
+  height: 50px;
+  width: 330px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 53px;
+  margin-top: 5px;
+}
+.user-data {
+  display: flex;
+  margin-bottom: 40px;
 }
 .visually-hidden {
   position: absolute;
@@ -587,4 +626,20 @@ span {
 .work {
   margin-bottom: 23px;
   margin-top: 40px;
+}
+.write {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+}
+.write + div {
+  background-image: url(../img/close.svg);
+  width: 21px;
+  height: 21px;
+}
+.write + div:hover {
+  background-image: url(../img/close-hover.svg);
+}
+.write + div:active {
+  background-image: url(../img/close-active.svg);
 }
