@@ -125,7 +125,7 @@
   margin-left: 12px;
 }
 .customization {
-  margin-right: 140px;
+  margin-right: 139px;
 }
 .design-studio {
   font-family: Roboto, Arial, sans-serif;
@@ -233,6 +233,7 @@ li:hover .template-H {
   font-size: 18px;
   margin-top: 43px;
   margin-bottom: 14px;
+  text-transform: uppercase;
 }
 .label:first-child {
   margin-bottom: 48px;
@@ -482,9 +483,6 @@ nav a:not(:last-child) {
   margin-top: 25px;
   margin-bottom: 16px;
 }
-.services-list {
-
-}
 .shop {
   display: flex;
 }
@@ -516,6 +514,8 @@ span {
 .tag {
   text-transform: uppercase;
   margin-right: 251px;
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: Roboto, Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
