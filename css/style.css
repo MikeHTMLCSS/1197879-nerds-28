@@ -31,7 +31,10 @@
   --sort-active: #000000;
   --disabled: #bfc1c3;
   --template-H-hover: #4d4d4d;
-  --dark: #000000;
+  --dark: #a0a0a0;
+  --point: ababab;
+  --strip: d7dcdf;
+  --value: 00ca74;
 }
 .about-us {
   display: flex;
@@ -101,6 +104,12 @@
   line-height: 18px;
   color: var(--contact);
   margin-top: 23px;
+}
+.cost {
+  width: 260px;
+  height: 80px;
+  background-color: var(--background-2);
+  border-radius: 3px;
 }
 .costs {
   display: flex;
@@ -284,7 +293,36 @@ li:hover .template-H {
   height: 248px;
   background-color: var(--light);
   padding-left: 50px;
-  padding-top: 40px;
+  padding-top: 32px;
+}
+.min {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--light);
+  border-radius: 50%;
+  box-shadow: 0px 2px 1px 0px var(--dark);
+}
+.min div {
+  width: 4px;
+  height: 4px;
+  margin: 8px;
+  background-color: black;/*var(--point);*/
+  border-radius: 50%;
+}
+.max {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--light);
+  border-radius: 50%;
+}
+.max div {
+  width: 4px;
+  height: 4px;
+  margin: 8px;
+  background-color: black;/*var(--point);*/
+  border-radius: 50%;
 }
 .more-read {
   width: 240px;
@@ -511,6 +549,12 @@ span {
   font-size: 26px;
   vertical-align: top;
 }
+.strip {
+  position: absolute;
+  width: 205px;
+  height: 2px;
+  background-color: red;/*var(--strip);*/
+}
 .tag {
   text-transform: uppercase;
   margin-right: 251px;
@@ -607,6 +651,12 @@ textarea {
 .user-data {
   display: flex;
   margin-bottom: 40px;
+}
+.value {
+  width: 138px;
+  height: 2px;
+  background-color: green; /*var(--value);*/
+  position: absolute;
 }
 .visually-hidden {
   position: absolute;
