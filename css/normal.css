@@ -5,11 +5,11 @@ a {
   text-decoration: none;
   color: var(--normal-color);
 }
-body {
+body, h1 {
   margin: 0;
 }
-h1 {
-  margin: 0;
+button, input:not([type="text"]):not([type="email"]) {
+  cursor: pointer;
 }
 ul {
   list-style: none;
