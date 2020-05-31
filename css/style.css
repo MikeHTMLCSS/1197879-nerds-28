@@ -39,11 +39,11 @@
 .about-us {
   display: flex;
   align-items: center;
-  padding-bottom: 73px;
+  padding-bottom: 59px;
 }
 .about-us img {
-  margin-top: 39px;
-  margin-bottom: 37px;
+  margin-bottom: 22px;
+  margin-top: 8px;
 }
 .about-us .list {
   display: flex;
@@ -51,19 +51,26 @@
   justify-content: left;
   align-items: center;
 }
+.about-us + section {
+  margin-bottom: 80px;
+}
 .about-us-top.top {
   margin-top: 27px;
 }
 .advantages-list {
   font-family: Roboto, Arial, sans-serif;
   font-weight: bold;
+  font-size: 16px;
+}
+.advantages-list:first-of-type {
   text-transform: uppercase;
+  margin-left: 15px;
 }
 .advantages-ul {
   display: flex;
 }
-.advantages-ul li {
-  margin-right: 21px;
+.advantages-ul li:not(:last-child) {
+  margin-right: 20px;
 }
 .button-1 {
   background-color: var(--button-1);
@@ -106,7 +113,8 @@
   font-family: Roboto, Arial, sans-serif;
   line-height: 18px;
   color: var(--contact);
-  margin-top: 23px;
+  margin-top: 26px;
+  margin-bottom: 0;
 }
 .cost {
   width: 260px;
@@ -152,6 +160,7 @@
   font-weight: bold;
   font-size: 45px;
   margin-bottom: 11px;
+  margin-top: 23px;
 }
 .direction {
   width: 11px;
@@ -277,12 +286,10 @@ li:hover .template-H {
 }
 .map {
   background-image: url(../img/map.png);
+  background-size: 100%;
   background-color: var(--background-2);
-  width: 1300px;
   height: 362px;
   padding-top: 54px;
-  padding-left: 140px;
-  margin: 0 auto;
 }
 .map button {
   width: 219px;
@@ -298,7 +305,9 @@ li:hover .template-H {
   height: 248px;
   background-color: var(--light);
   padding-left: 50px;
-  padding-top: 32px;
+  padding-top: 37px;
+  padding-bottom: 37px;
+  margin-left: 140px;
 }
 .min {
   position: absolute;
@@ -530,9 +539,6 @@ nav a:not(:last-child) {
   margin-top: 25px;
   margin-bottom: 16px;
 }
-.shop {
-  display: flex;
-}
 .sortli {
   text-transform: uppercase;
 }
@@ -578,7 +584,7 @@ span {
 .tel {
   font-family: Roboto, Arial, sans-serif;
   color: var(--contact);
-  margin-top: 23px;
+  margin-top: 18px;
   margin-bottom: 37px;
 }
 .template-H {
