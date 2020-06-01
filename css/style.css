@@ -188,6 +188,15 @@
 .discount {
   margin: 0;
 }
+.div-fb:active .fb {
+  background-image: url(../img/fb-active.svg);
+}
+.div-in:active .in {
+  background-image: url(../img/in-active.svg);
+}
+.div-vk:active .vk {
+  background-image: url(../img/vk-active.svg);
+}
 .fb{
   width: 12px;
   height: 22px;
@@ -195,9 +204,6 @@
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
-}
-.fb:active {
-  background-image: url(../img/fb-active.svg);
 }
 .footer {
   padding-top: 68px;
@@ -252,9 +258,6 @@ li:hover .template-H {
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
-}
-.in:active {
-  background-image: url(../img/in-active.svg);
 }
 .label {
   font-family: Roboto, Arial, sans-serif;
@@ -406,10 +409,10 @@ nav a:not(:last-child) {
   background-color: var(--icon);
   border-radius: 50%;
 }
-.network div:hover {
+.network div:hover:not(.fb):not(.in):not(.vk) {
   background-color: var(--icon-hover);
 }
-.network div:active {
+.network div:active:not(.fb):not(.in):not(.vk) {
   background-color: var(--icon-active);
 }
 .next {
@@ -699,9 +702,6 @@ textarea {
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
-}
-.vk:active {
-  background-image: url(../img/vk-active.svg);
 }
 .work {
   margin-bottom: 26px;
