@@ -185,6 +185,9 @@
 :disabled + label {
   color: var(--disabled);
 }
+.discount {
+  margin: 0;
+}
 .fb{
   width: 12px;
   height: 22px;
@@ -197,18 +200,21 @@
   background-image: url(../img/fb-active.svg);
 }
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding-top: 68px;
   padding-bottom: 68px;
+}
+.footer div:not(.end) {
+  display: flex;
+  align-items: center;
+  width: 1158px;
+  margin: 0 auto;
 }
 .friend {
   font-family: Roboto, Arial, sans-serif;
   font-weight: bold;
   font-size: 36px;
-  margin-bottom: 0;
-  margin-top: 0;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 header {
   background-color: var(--background-2);
@@ -286,7 +292,7 @@ li:hover .template-H {
 }
 .map {
   background-image: url(../img/map.png);
-  background-size: 100%;
+  background-size: 100% 100%;
   background-color: var(--background-2);
   height: 362px;
   padding-top: 54px;
@@ -300,32 +306,13 @@ li:hover .template-H {
   text-transform: uppercase;
   border: none;
 }
-.map div {
+.map div:not(.position) {
   width: 269px;
   height: 248px;
   background-color: var(--light);
   padding-left: 50px;
   padding-top: 37px;
   padding-bottom: 23px;
-  margin-left: 140px;
-}
-.min {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: var(--light);
-  border-radius: 50%;
-  box-shadow: 0px 2px 1px 0px var(--dark);
-  left: 18px;
-  top: 30px;
-  cursor: pointer;
-}
-.min div {
-  width: 4px;
-  height: 4px;
-  margin: 8px;
-  background-color: var(--point);
-  border-radius: 50%;
 }
 .max {
   position: absolute;
@@ -339,6 +326,24 @@ li:hover .template-H {
   cursor: pointer;
 }
 .max div {
+  width: 4px;
+  height: 4px;
+  margin: 8px;
+  background-color: var(--point);
+  border-radius: 50%;
+}
+.min {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--light);
+  border-radius: 50%;
+  box-shadow: 0px 2px 1px 0px var(--dark);
+  left: 18px;
+  top: 30px;
+  cursor: pointer;
+}
+.min div {
   width: 4px;
   height: 4px;
   margin: 8px;
@@ -391,10 +396,11 @@ nav a:not(:last-child) {
 }
 .network {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 261px;
+  margin-right: 139px;
 }
-.network div {
+.network div:not(.fb):not(.in):not(.vk) {
   width: 81px;
   height: 81px;
   background-color: var(--icon);
