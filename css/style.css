@@ -109,6 +109,13 @@
 .characteristic {
   background-color: var(--background-2);
 }
+.choosed div {
+  width: 8px;
+  height: 8px;
+  background-color: var(--background-2);
+  border-radius: 50%;
+  margin: 0 auto;
+}
 .contact {
   font-family: Roboto, Arial, sans-serif;
   line-height: 18px;
@@ -226,7 +233,6 @@ header {
   background-color: var(--background-2);
 }
 h1 {
-  display: block;
   background-color: var(--background-2);
   height: 163px;
   font-family: Roboto, Arial, sans-serif;
@@ -494,7 +500,7 @@ nav a:not(:last-child) {
 .partner4:active{
   background-image: url(../img/partner-4-active.png);
 }
-.popup {
+.popup, .illustration-2, .illustration-3, .design-2, .design-3 {
   display: none;
 }
 .popup-show {
@@ -549,6 +555,23 @@ nav a:not(:last-child) {
   text-transform: uppercase;
   margin-top: 25px;
   margin-bottom: 16px;
+}
+.slider {
+  position: absolute;
+  margin-left: 537px;
+  margin-top: 317px;
+  width: 88px;
+  height: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.slider button {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--light);
+  border: none;
+  padding: 0;
 }
 .sortli {
   text-transform: uppercase;
@@ -690,10 +713,6 @@ textarea {
   position: absolute;
   left: 26px;
   top: 39px;
-}
-.visually-hidden {
-  position: absolute;
-  font-size: 0;
 }
 .vk {
   width: 26px;
