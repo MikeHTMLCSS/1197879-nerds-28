@@ -36,6 +36,7 @@
   --strip: #d7dcdf;
   --value: #00ca74;
   --input: #b8b8b8;
+  --name-active: #b3b3b3;
 }
 .about-us {
   display: flex;
@@ -243,11 +244,17 @@ h1 {
   vertical-align: middle;
   padding-top: 72px;
 }
-h4 {
+a.layout-name {
   text-transform: uppercase;
   font-family: Roboto, Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
+}
+a.layout-name:hover {
+  color: var(--ordinary-button);
+}
+a.layout-name:active {
+  color: var(--name-active);
 }
 .in {
   width: 21px;
@@ -315,7 +322,7 @@ label {
   color: var(--contact);
   line-height: 18px;
 }
-.layout-data a {
+.layout-data a:not(.layout-name) {
   font-family: Roboto, Arial, sans-serif;
   width: 200px;
   height: 50px;
@@ -324,10 +331,10 @@ label {
   color: var(--light);
   font-weight: 500;
 }
-.layout-data a:hover {
+.layout-data a:not(.layout-name):hover {
   background-color: var(--ordinary-button-hover);
 }
-.layout-data a:active {
+.layout-data a:not(.layout-name):active {
   background-color: var(--ordinary-button-active);
 }
 .list div {
