@@ -244,18 +244,6 @@ h1 {
   vertical-align: middle;
   padding-top: 72px;
 }
-a.layout-name {
-  text-transform: uppercase;
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-}
-a.layout-name:hover {
-  color: var(--ordinary-button);
-}
-a.layout-name:active {
-  color: var(--name-active);
-}
 .in {
   width: 21px;
   height: 21px;
@@ -312,7 +300,7 @@ label {
   height: 231px;
   background-color: var(--background-2);
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   display: none;
@@ -321,21 +309,45 @@ label {
   font-family: Roboto, Arial, sans-serif;
   color: var(--contact);
   line-height: 18px;
+  width: 360px;
+  text-align: center;
 }
 .layout-data a:not(.layout-name) {
   font-family: Roboto, Arial, sans-serif;
   width: 200px;
-  height: 50px;
+  height: 34px;
   border-radius: 3px;
   background-color: var(--ordinary-button);
   color: var(--light);
   font-weight: 500;
+  display: block;
+  text-align: center;
+  padding-top: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 34px;
 }
 .layout-data a:not(.layout-name):hover {
   background-color: var(--ordinary-button-hover);
 }
 .layout-data a:not(.layout-name):active {
   background-color: var(--ordinary-button-active);
+}
+.layout-name {
+  text-transform: uppercase;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  width: 360px;
+  text-align: center;
+  display: block;
+  margin-top: 31px;
+}
+.layout-name:hover {
+  color: var(--ordinary-button);
+}
+.layout-name:active {
+  color: var(--name-active);
 }
 .list div {
   width: 25px;
