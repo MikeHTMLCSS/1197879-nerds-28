@@ -506,8 +506,16 @@ nav a:not(:last-child) {
   height: 50px;
 }
 .opened {
-  border-bottom: 2px solid var(--ordinary-button);
-  padding-bottom: 15px;
+  position: relative;
+}
+.opened::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 74px;
+  height: 2px;
+  background-color: var(--ordinary-button);
+  bottom: -20px;
 }
 .page {
   display: flex;
