@@ -694,6 +694,9 @@ span {
   left: 26px;
   top: 39px;
 }
+.switch-on:hover {
+  background-color: var(--ordinary-button-hover);
+}
 .tag {
   text-transform: uppercase;
   margin-right: 251px;
