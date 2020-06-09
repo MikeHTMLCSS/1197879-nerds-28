@@ -591,14 +591,20 @@ nav a:not(:last-child) {
 .popup, .illustration-2, .illustration-3, .design-2, .design-3 {
   display: none;
 }
+.popup label {
+  padding-left: 0;
+  padding-bottom: 7px;
+}
 .popup-show {
   display: block;
   position: fixed;
   left: 290px;
-  bottom: 100px;
+  top: 50px;
   background-color: var(--light);
-  padding: 80px;
-  padding-top: 25px;
+  padding-bottom: 80px;
+  padding-top: 20px;
+  padding-left: 90px;
+  padding-right: 80px;
   box-shadow: 0px 10px 18px 0px var(--dark);
 }
 .popup-head {
@@ -725,7 +731,7 @@ span {
   align-items: center;
 }
 textarea {
-  width: 760px;
+  width: 720px;
   padding-left: 20px;
   padding-top: 20px;
   padding: 20px;
@@ -767,11 +773,10 @@ textarea {
   position: relative;
 }
 [type="email"] {
-  height: 50px;
-  width: 330px;
+  height: 43px;
+  width: 315px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: 5px;
 }
 [type="radio"] + label {
   margin-bottom: 15px;
@@ -798,7 +803,7 @@ textarea {
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
-  margin-top: 48px;
+  margin-top: 43px;
 }
 [type="submit"].look {
   margin-top: 30px;
@@ -826,16 +831,15 @@ textarea {
   color: var(--catalog-button-text);
 }
 [type="text"] {
-  height: 50px;
-  width: 330px;
+  height: 43px;
+  width: 315px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-right: 53px;
-  margin-top: 5px;
+  margin-right: 40px;
 }
 .user-data {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .value {
   width: 138px;
@@ -861,6 +865,7 @@ textarea {
   font-family: Roboto, Arial, sans-serif;
   font-size: 45px;
   font-weight: 500;
+  margin-bottom: 35px;
 }
 .write + div {
   background-image: url(../img/close.svg);
