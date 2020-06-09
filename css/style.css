@@ -614,10 +614,10 @@ nav a:not(:last-child) {
   width: 1158px;
 }
 .services {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  column-gap: 100px;
   border-bottom: 2px solid var(--background-2);
-  margin: 0;
   padding-top: 80px;
   width: 1158px;
   padding-right: 58px;
