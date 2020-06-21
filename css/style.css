@@ -111,12 +111,15 @@
 .characteristic {
   background-color: var(--background-2);
 }
-.choosed div {
+.choosed::before {
+  content: "";
+  position: absolute;
   width: 8px;
   height: 8px;
   background-color: var(--background-2);
   border-radius: 50%;
-  margin: 0 auto;
+  top: 5px;
+  left: 5px;
 }
 .contact {
   font-family: Roboto, Arial, sans-serif;
@@ -164,6 +167,11 @@
   line-height: 45px;
   margin-bottom: 33px;
 }
+.down.direction {
+  background-image: url(../img/arrow-1-active.svg);
+  width: 11px;
+  height: 10px;
+}
 .digit {
   font-family: Roboto, Arial, sans-serif;
   font-weight: bold;
@@ -178,18 +186,8 @@
   background: none;
   margin-top: 0;
 }
-.direction .down {
-  background-image: url(../img/arrow-1-active.svg);
-  width: 11px;
-  height: 10px;
-}
 .direction:nth-of-type(1) {
   margin-right: 18px;
-}
-.direction .up {
-  background-image: url(../img/arrow-2.svg);
-  width: 11px;
-  height: 10px;
 }
 :disabled + label {
   color: var(--disabled);
@@ -666,6 +664,7 @@ nav a:not(:last-child) {
   background-color: var(--light);
   border: none;
   padding: 0;
+  position: relative;
 }
 .sortli {
   text-transform: uppercase;
@@ -836,6 +835,11 @@ textarea {
   padding-left: 20px;
   padding-right: 20px;
   margin-right: 40px;
+}
+.up {
+  background-image: url(../img/arrow-2.svg);
+  width: 11px;
+  height: 10px;
 }
 .user-data {
   display: flex;
