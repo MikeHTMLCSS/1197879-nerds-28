@@ -380,10 +380,11 @@ label {
 }
 .map {
   background-image: url(../img/map.png);
-  background-size: cover;
+  background-size: 1440px;
   background-color: var(--background-2);
   height: 362px;
   padding-top: 54px;
+  background-position-x: 40px;
 }
 .map button {
   width: 219px;
