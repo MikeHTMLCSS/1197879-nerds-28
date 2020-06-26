@@ -105,8 +105,8 @@
   color: var(--button-3-text);
 }
 .cart {
-  margin-right: 25px;
-  margin-top: 77px;
+  margin-right: 19px;
+  margin-top: 66px;
 }
 .characteristic {
   background-color: var(--background-2);
@@ -467,7 +467,7 @@ label {
 nav {
   display: flex;
 }
-nav a:not(:last-child) {
+nav a {
   margin-right: 45px;
 }
 .nav {
@@ -475,7 +475,7 @@ nav a:not(:last-child) {
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
-  margin-top: 75px;
+  margin-top: 66px;
 }
 .nav:hover {
   color: var(--ordinary-button);
@@ -545,10 +545,25 @@ nav a:not(:last-child) {
   height: 52px;
   background-color: var(--background-2);
 }
+.partners :nth-child(2) {
+  position: relative;
+  left: -3px;
+}
+.partners :nth-child(4) {
+  position: relative;
+  left: -25px;
+}
+.partners :nth-child(6) {
+  position: relative;
+  left: -22px;
+}
 .partner1 {
   width: 199px;
   height: 68px;
   background-image: url(../img/partner-1.png);
+  position: relative;
+  left: 4px;
+  top: 7px;
 }
 .partner1:hover {
   background-image: url(../img/partner-1-hover.png);
@@ -560,6 +575,9 @@ nav a:not(:last-child) {
   width: 209px;
   height: 90px;
   background-image: url(../img/partner-2.png);
+  position: relative;
+  left: -13px;
+  top: 1px;
 }
 .partner2:hover {
   background-image: url(../img/partner-2-hover.png);
@@ -571,6 +589,9 @@ nav a:not(:last-child) {
   width: 185px;
   height: 52px;
   background-image: url(../img/partner-3.png);
+  position: relative;
+  left: -22px;
+  top: 1px;
 }
 .partner3:hover {
   background-image: url(../img/partner-3-hover.png);
@@ -582,6 +603,9 @@ nav a:not(:last-child) {
   width: 173px;
   height: 84px;
   background-image: url(../img/partner-4.png);
+  position: relative;
+  left: -14px;
+  top: 4px;
 }
 .partner4:hover {
   background-image: url(../img/partner-4-hover.png);
